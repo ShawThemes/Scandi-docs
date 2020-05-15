@@ -1,1 +1,1 @@
-# Scandi-docs
+# scandi-docs
