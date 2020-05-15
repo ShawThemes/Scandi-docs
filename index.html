@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Scandi Docs</title>
+</head>
+<body>
+  <header>
+    <h1>Scandi</h1>
+    <h2>Theme Documentation</h2>
+  </header>
+
+  <div class="wrapper">
+    <!---------- NAVIGATION ---------->
+    <div class="nav-container">
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item active">
+            <a href="#start">Getting Started</a>
+            <ul>
+              <li class="nav-item nav-item-sec active"><a href="#intro">Introduction</a></li>
+              <li class="nav-item nav-item-sec"><a href="#reqs">Theme Reqiurements</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#install">Installation</a>
+            <ul>
+              <li class="nav-item nav-item-sec"><a href="#theme-inst">Theme Installation</a></li>
+              <li class="nav-item nav-item-sec"><a href="#plugin-inst">Plugin Installation</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#menu">Menu</a>
+            <ul>
+              <li class="nav-item nav-item-sec"><a href="#create-menu">How To Create A Page Menu</a></li>
+              <li class="nav-item nav-item-sec"><a href="#edit-menu">How to Edit The Menu</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#cp">Custom Posts</a>
+            <ul>
+              <li class="nav-item nav-item-sec"><a href="#cp-tes">Testimonials</a></li>
+              <li class="nav-item nav-item-sec"><a href="#cp-gal">Gallery images</a></li>
+              <li class="nav-item nav-item-sec"><a href="#cp-faq">FAQs</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#custom">Customization</a>
+            <ul>
+              <li class="nav-item nav-item-sec"><a href="#display">How to Display and hide sections</a></li>
+              <li class="nav-item nav-item-sec"><a href="#colors">How to change theme colors</a></li>
+              <li class="nav-item nav-item-sec"><a href="#logo">How to change logo</a></li>
+              <li class="nav-item nav-item-sec"><a href="#video">How to add video</a></li>
+              <li class="nav-item nav-item-sec"><a href="#typo">How to Customize Theme Typography</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item"><a href="#support">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <!---------- CONTENTS ---------->
+    <div class="contents-container">
+      <section id="start">
+        <h2>Getting Started</h2>
+        <div id="intro" class="section-contents">
+          <h3>Introduction</h3>
+          <p>Thank you for purchasing <b>SCANDI</b>  — creative and lightweight minimalistic landing page template! This theme is best suitable for small businesses that wouil like to reinforce sales with an easy to customize promotion website. It looks beautifully end elegant on all types of screens and devices including Windows, Mac, iOS, Android, etc. The <b>SCANDI</b> theme has a well commented and easily customizable source code with detailed documentation. 
+          We hope you will enjoy it!
+          </p>
+        </div>
+        <div id="reqs" class="section-contents">
+          <h3>Theme Requirements</h3>
+          <p>
+            To use SCANDI, you must be running WordPress 5 or higher, PHP 5.6 or higher, and MySQL 5 or higher. We have tested it with Mac, Windows, and Linux. Below is a list of items you should ensure your host can comply with.
+          </p>
+          <ul>
+            <li>Check to ensure that your web host has the minimum requirements to run WordPress.</li>
+            <li>Always make sure they are running the latest version of WordPress.</li>
+            <li>You can download the latest release of <a href="https://wordpress.org" target="_blank">WordPress</a> from the official WordPress website. If you need help installing WordPress, follow the instructions in WordPress Codex. Below are all the useful links for WordPress information:
+              <p><a href="https://codex.wordpress.org/Installing_WordPress" target="_blank">WordPress Codex</a> – General info about WordPress and how to install on your server.</p>
+              <p><a href="https://codex.wordpress.org/First_Steps_With_WordPress" target="_blank">First Steps With WordPress</a> – General info about multiple topics about WordPress.</p>
+              <p><a href="https://codex.wordpress.org/FAQ_New_To_WordPress" target="_blank">FAQ New To WordPress</a> – The most popular FAQ’s regarding WordPress.
+              </p>
+            </li>
+            <li>Always create secure passwords for FTP and Database.</li>
+            <li class="note">Make sure no additional plugins are activated except the required plugins by the theme.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="install">
+        <h2>Installation</h2>
+        <p>The process of installing the theme to your website consists of two parts - <b>Theme Installation</b> and <b>Plugin Installation</b>. For the correct work of the website, please, complete both.</p>
+        <div id="theme-inst" class="section-contents">
+          <h3>Theme Installation</h3>
+          <p>
+            After purchasing <strong>SCANDI</strong>, please download the package from <a href="https://themeforest.net/" target="_blank">ThemeForest</a>. All you need to do is move your mouse over your login name at the right top corner – after you log in ThemeForest, and then click Downloads. Here you will find all the items that you have purchased. Hover to Download button next to Scandi theme, you will see these download options:
+            <ul>
+              <li><strong>Installable WordPress file only</strong> which you can upload when installing the theme
+              </li>
+              <li><strong>All files & documentation</strong> (full zip folder). You will need to extract and locate the installable WordPress file to upload when installing the theme</li>
+            </ul>
+            <img src="./img/themeforest.png" alt="themeforest account">
+          </p>
+          <hr>
+          <h4>Install theme via WordPress</h4>
+          <p><b>Step 1</b>: Navigate to <strong>Appearance >> Themes</strong> </p>
+          <img src="./img/i0.png" alt="">
+          <p><b>Step 2</b>: Click <strong>Add New</strong>, then click <strong>Upload Theme >> Choose File</strong>:</p>
+          <img src="./img/i1.png" alt="">
+          <img src="./img/i2.png" alt="">
+          <p><b>Step 3</b>: Navigate to the <strong>.zip</strong> file on your computer, then click <strong>Install Now</strong>:</p>
+          <img src="./img/i3.png" alt="">
+          <p><b>Step 4</b>: When the installation complete, click <strong>Activate</strong>. You will be redirected to Themes page with <strong>Scandi</strong> activated:</p>
+          <img src="./img/i4.png" alt="">
+          <img src="./img/i5.png" alt="">
+          <hr>
+          <h4>Install theme via FTP</h4>
+          <p><b>Step 1</b>: Unzip <strong>zip</strong> file package – the zip package is inside <strong>Scandy</strong> files folder you have downloaded from ThemeForest <strong>Scandi</strong>.
+          </p>
+          <p><b>Step 2</b>: Connect to your FTP server and navigate to the folder where your WordPress is installed.</p>
+          <p><b>Step 3</b>: Go to <strong>wp-content/themes/</strong> and upload theme folder (the path will look like this: <strong>wp-content/themes/scandi</strong></p>
+          <p><b>Step 4</b>: Open WordPress admin panel (navigate through the web-browser to the folder where you have installed the WordPress e.g www.yourdomain.com/wp-admin/) and go to <strong>Appearance >> Themes</strong>  on admin sidebar. Activate <strong>Scandi</strong>.
+          </p>
+        </div>
+        <div id="plugin-inst" class="section-contents">
+          <h3>Plugin Installation</h3>
+          <p>After activating <strong>Scandi</strong>, you will see this notice:</p>
+          <img src="./img/i6.png" alt="">
+          <p>Click <strong>Begin installing plugins</strong>. You will be navigated to <strong>Install Required Plugins</strong> page.</p>
+          <p>Simply check all of them (or all of the required plugins and some recommended plugins you like) and from the drop-down select <strong>Install</strong>, then hit <strong>Apply</strong>.</p>
+          <img src="" alt="Plugin Installation Bulk Action">
+          <p>When finishing, it should look like this:</p>
+          <img src="" alt="Plugin Installed">
+          <p>Next, go to <strong>Plugins >> Installed Plugins</strong>, check all of them and from the drop-down select <strong>Activate</strong> and hit <strong>Apply</strong>.</p>
+          <p><b>Required plugins:</b> Advanced Custom Fields and Contact Form 7</p>
+          <p><b>Recommended plugins:</b> Easy Google Fonts</p>
+          <p>You can also find information on plugin installation and configuration  and support links there:
+            <ul>
+              <li><a href="" target="_blank">Advanced Custom Fields</a></li>
+              <li><a href="" target="_blank">Contact Form 7</a></li>
+              <li><a href="" target="_blank">Newsletter</a></li>
+              <li><a href="" target="_blank">Easy Google Fonts</a></li>
+            </ul>
+          </p>
+        </div>
+      </section>
+
+      <!----------- MENU ----------->
+      <section id="menu">
+        <h2>Menu</h2>
+        <p>For easy navigation through the page <b>SCANDI</b> theme has a responsive slide-in navigation menu available on click on the <strong> menu button</strong> in the top right corner of the page. By default, the menu is "empty". Wordpress allows you to configure the menu as you like.</p>
+        <div id="create-menu" class="section-contents">
+          <h3>How To Create A Page Menu</h3>
+          <p><b>Step 1</b>: Navigate to <strong>Appearance >> Menus</strong> in your admin sidebar.</p>
+          <img src="./img/menu3.png" alt="">
+          <p><b>Step 2</b>: In the top right corner hit <strong>Screen Options</strong>. It will open a tab with boxes for possible menu item types.</p>
+          <img src="./img/menu1.png" alt="">
+          <p><b>Step 3</b>: Uncheck all the boxes except for <strong>Custom Links</strong> and <strong>Title Attribute</strong>.</p>
+          <img src="./img/menu2.png" alt="">
+          <p><b>Step 4</b>: Give your menu a name, then hit <strong>Create Menu</strong>.</p>
+          <img src="./img/menu4.png" alt="">
+          <p><b>Step 5</b>: The theme uses only anchor links in the menu to navigate through the page. In the tab <strong>Custom Links</strong> enter the section URL and the text that will appear on the menu. Here is a list of section URLs:
+            <ul>
+              <li>Main screen - <strong>#home</strong> </li>
+              <li>About Us - <strong>#about</strong> </li>
+              <li>FAQ - <strong>#faq</strong> </li>
+              <li>Testimonials - <strong>#testimonials</strong></li>
+              <li>Gallery - <strong>#gallery</strong></li>
+              <li>Contacts - <strong>#contacts</strong></li>
+            </ul>
+            Copy and paste the URL from this list. Make sure to include <strong>#</strong>. <b>For the correct work of scroll the menu items must be in the same order as the corresponding sections of the page!</b>
+          </p>
+          <img src="./img/menu5.png" alt="">
+          <p><b>Step 6</b>: To complete the setting of the menu item you've just created, open it by clicking on the arrow next to the menu item as shown in the picture. For the correct work of the menu, please fill in the <strong>Title Attribute</strong> field. This attribute must be the same is the URL but without the <strong>#</strong> sign. You can see the example in the picture.</p> 
+          <img src="./img/menu6.png" alt="">
+          <p><b>Step 7</b>: Make sure to check the <strong>Main Menu</strong> box below the menu items list as seen in the picture above. </p>
+          <p><b>Step 8</b>: Don't forget to hit <strong>Save Menu</strong> every time you create and edit menu items.</p>
+        </div>
+        <div id="edit-menu" class="section-contents">
+          <h3>How To Edit The Menu</h3>
+          <p><b>Step 1</b>: Go to <strong>Appearance >> Menus</strong> in your admin sidebar.</p>
+          <p><b>Step 2</b>: You can rename the menu as you like. If you want to add more menu items, choose them from the left and hit <strong>Add to menu</strong>. You can also <b>change</b> and <b>remove</b> the items.</p>
+          <img src="./img/menu7.png" alt="">
+          <p><b>Step 3</b>: Don't forget to hit <strong>Save Menu</strong> every time you create and edit menu items.</p>
+
+        </div>
+      </section>
+
+      <!----------- CUSTOM POSTS ----------->
+      <section id="cp">
+        <h2>Custom Posts</h2>
+        <p>In <strong>Scandi</strong> theme <strong>Testimonials</strong>, <strong>Gallery Images</strong> and <strong>FAQs</strong> are added as the Wordpress custom posts. To add, edit or delete such posts, navigate to the corresponding sections on your Wordpress admin panel.</p>
+
+        <div id="cp-tes" class="section-contents">
+          <h3>Testimonials</h3>
+          <h4>How to Add Testimonials</h4>
+          <p><b>Step 1</b>: Go to <strong>Testimonials >> Add new</strong> in your admin sidebar.</p>
+          <img src="./img/testim1.png" alt="">
+          <p><b>Step 2</b>: Fill in all the fields and set the <strong>Featured Image</strong>.</p>
+          <img src="./img/testim2.png" alt="">
+          <p><b>Step 3</b>: Click <strong>Publish</strong> when you finish. The testimonial will now appear on the page. <b>Make sure the <strong>"Display Section"</strong> is checked for the Testimonials section.</b> If you don't see the Testimonials section on the page, go to <strong>Appearance >> Customize >> Testimonials</strong> and check the <strong>"Display Section"</strong> box.</p>
+          <hr>
+          <h4>How to edit testimonials</h4>
+          <p><b>Step 1</b>: To see the list of testimonials you added, edit or delete them, navigate to  <strong>Testimonials >> Testimonials</strong> in your admin sidebar.</p>
+          <img src="./img/testim5.png" alt="">
+          <p><b>Step 2</b>: Hover your mouse over the item you need and click on <strong>Edit</strong> to change the contents of the post or <strong>Trash</strong> to delete it permanently.</p>
+          <img src="./img/testim6.png" alt="">
+        </div>
+
+        <div id="cp-gal" class="section-contents">
+          <h3>Gallery Images</h3>
+          <h4>How to Add Gallery Images</h4>
+          <p><b>Step 1</b>: Go to <strong>Gallery Images >> Add new</strong> in your admin sidebar.</p>
+          <img src="./img/gal1.png" alt="">
+          <p><b>Step 2</b>: Enter a title for the new image and set the <strong>Featured Image</strong>.</p>
+          <img src="./img/gal2.png" alt="">
+          <img src="./img/gal3.png" alt="">
+          <img src="./img/gal4.png" alt="">
+          <img src="./img/gal5.png" alt="">
+          <p><b>Step 3</b>: Click <strong>Publish</strong> when you finish. The gallery image will now appear on the page. <b>Make sure the <strong>"Display Section"</strong> is checked for the Gallery section.</b> If you don't see the Gallery section on the page, go to <strong>Appearance >> Customize >> Gallery</strong> and check the <strong>"Display Section"</strong> box.</p>
+          <hr>
+          <h4>How to edit gallery images</h4>
+          <p><b>Step 1</b>: To see the list of gallery images you added, edit or delete them, navigate to  <strong>Gallery Images >> Gallery Images</strong> in your admin sidebar.</p>
+          <img src="./img/gal9.png" alt="">
+          <p><b>Step 2</b>: Hover your mouse over the item you need and click on <strong>Edit</strong> to change the contents of the post or <strong>Trash</strong> to delete it permanently.</p>
+          <img src="./img/gal6.png" alt="">
+          <img src="./img/gal7.png" alt="">
+          <h4>How to delete an image from the Media Library</h4>
+          <p><b>Step 1</b>: If you need to delete an image from the <strong>Media Library</strong>, go to <strong>Media >> Library</strong> in your admin sidebar.</p>
+          <img src="./img/media1.png" alt="">
+          <p><b>Step 2</b>: Click on the image you want to delete. In the opened modal window hit <strong>Delete Permanently</strong>.</p>
+          <img src="./img/gal9.png" alt="">
+        </div>
+
+        <div id="cp-faq" class="section-contents">
+          <h3>FAQs</h3>
+          <h4>How to Add FAQs</h4>
+          <p><b>Step 1</b>: Go to <strong>FAQ Items >> Add new</strong> in your admin sidebar.</p>
+          <img src="./img/faq1.png" alt="">
+          <p><b>Step 2</b>: Fill in all the fields and click <strong>Publish</strong> when you finish.</p>
+          <img src="./img/faq2.png" alt="">
+          <p><b>Step 3</b>: <b>Make sure the <strong>"Display Section"</strong> is checked for the FAQ section.</b> If you don't see the FAQ section on the page, go to <strong>Appearance >> Customize >> FAQ</strong> and check the <strong>"Display Section"</strong> box.</p>
+          <hr>
+          <h4>How to edit FAQs</h4>
+          <p><b>Step 1</b>: To see the list of testimonials you added, edit or delete them, navigate to  <strong>FAQ Items >> FAQ Items</strong> in your admin sidebar.</p>
+          <img src="./img/faq5.png" alt="">
+          <p><b>Step 2</b>: Hover your mouse over the item you need and click on <strong>Edit</strong> to change the contents of the post or <strong>Trash</strong> to delete it permanently.</p>
+          <img src="./img/faq6.png" alt="">
+        </div>
+      </section>
+
+      <!----------- CUSTOMIZATION ----------->
+      <section id="custom">
+        <h2>Customization</h2>
+        
+          <p><strong>SCANDI</strong> comes with an advanced settings panel that is loaded with options. We have the options organized into logical tabbed sections, and each option has a description of what it will do on the front end. Because of the sizable amount of options <strong>SCANDI</strong> provides, we cannot go over them in full detail here in our documentation. We encourage you to please take some time and navigate through each tab to see what we offer. Go to <strong>Appearance  >>  Customize</strong>   on admin sidebar to access the setting options. See below for a screenshot of our <strong>Customize</strong>  panel.</p>
+          <img height="600px" src="./img/custom.png" alt="">
+
+
+        <div id="display" class="section-contents">
+          <h3>How To Display and hide sections</h3>
+          <p>Each section has a display option. By default, this option is set to <b>false</b> for all the sections except for the main screen section, the header and the footer. In order to make a section visible on your page, follow the steps below:</p>
+          <p><b>Step 1</b>: Navigate to <strong>Appearance >> Customize</strong>. On the customization panel choose the section you'd like to display. </p>
+          <img src="./img/display1.png" alt="">
+          <p><b>Step 2</b>: Check the <strong>‘Display section’</strong> box. You can now see the section on the page. To hide a section, uncheck the box. Don’t forget to click <strong>Publish</strong> after you have changed the <strong>‘Display section’</strong> option.</p>
+          <img src="./img/display2.png" alt="">
+        </div>
+
+        <div id="colors" class="section-contents">
+          <h3>How To Change theme colors</h3>
+          <p><b>Step 1</b>: Go to <strong>Appearance >> Customize >> Color Scheme</strong> on your Wordpress Admin Panel. </p>
+          <img src="./img/color1.png" height="600px" alt="">
+          <p><b>Step 2</b>: On the panel you will see two color pickers - one for the <strong>primary color</strong>, which is the color of the background elements, and one for the <strong>secondary color</strong>, which is the color of the buttons and list bullet points. Click on the one you would like to change and choose any color on the color picker, or paste in the HEX value of the color you want. You can always switch the colors back to default theme colors by clicking <strong>Default</strong>  button.</p>
+          <p><b>Step 3</b>: Click <strong>Publish</strong> to save the changes. </p>
+          <img src="./img/color2.png" alt="">
+        </div>
+
+        <div id="logo" class="section-contents">
+          <h3>How to change logo</h3>
+          <p><b>Step 1</b>: Go to <strong>Appearance >> Customize >> Header</strong> on your Wordpress Admin Panel.</p>
+          <img src="./img/logo1.png" height="600px" alt="">
+          <p><b>Step 2</b>: Click on <strong>Change Image</strong> button below the logo image. It will open the <strong>Media Library</strong>.</p>
+          <img src="./img/logo2.png" alt="">
+          <p> If your logo image is not in the library yet, hit <strong>Upload Files</strong> and select the necessary image. Once it’s uploaded, add <strong>Alt attribute</strong> to the image and hit <strong>Choose Image</strong> button.</p>
+          <img src="./img/logo3.png" alt="">
+          <img src="./img/logo4.png" alt="">
+          <img src="./img/logo5.png" alt="">
+          <p><b>Step 3</b>: Click <strong>Publish</strong> to save the changes.</p>
+        </div>
+
+        <div id="video" class="section-contents">
+          <h3>How to add video</h3>
+          <p><b>Step 1</b>: Go to <strong>Appearance >> Customize >> Banner with video</strong> on your Wordpress Admin Panel. </p>
+          <p><b>Step 2</b>: Make sure the <strong>“Display section”</strong> box is checked.</p>
+          <img src="./img/video1.png" alt="">
+          <p><b>Step 3</b>: The section uses YouTube player so your video must be uploaded on youtube. Once you upload your video, you get a message of successful upload and the link to the video. You only need the part of the link that contains the unique idetifier of the video - a set of numbers and letters that goes right after ‘youtu.be/':</p>
+          <img src="./img/youtube-link.png" alt="">
+          <p>Copy this part only and paste it into the <strong>Video URL</strong> option.</p>
+          <img src="./img/video2.png" alt="">
+          <p><b>Step 3</b>: Click <strong>Publish</strong> to save the changes.</p>
+        </div>
+
+        <div id="typo" class="section-contents">
+          <h3>How to customize theme typography</h3>
+          <p><b>Step 1</b>: Go to <strong>Appearance >> Customize >> Typography >> Default Typography</strong> on your Wordpress Admin Panel. If you cannot see the <strong>Typography</strong> tab on the customize panel, go back to <a href="">Plugin Installation</a> and install the required <strong>Easy Google Fonts Plugin</strong>.</p>
+          <img src="./img/typ1.png" height="500px" alt="">
+          <p><b>Step 2</b>: Choose the kind of the typographical elements you'd like to customize - paragraph text or headings - and click <strong>Edit Font</strong>. You will see a set of different options for customization.</p>
+          <p>In the <strong>Styles</strong> tab, you can change the <strong>Font Family</strong>, <strong>Font Weight/Style</strong>, <strong>Text Decoration</strong> and <strong>Text Transform</strong>. You can always switch back to the default style by picking the <strong>Theme Default</strong> option.</p>
+          <img src="./img/typ2.png" alt="">
+          <p>In the <strong>Appearance</strong> tab, you can change the <strong>Font Color</strong>, text <strong>Background Color</strong>, <strong>Line Height</strong> and <strong>Letter Spacing</strong>. You can always switch back to the default style by clicking <strong>Reset</strong>.</p>
+          <img src="./img/typ3.png" height="500px" alt="">
+          <p>In the <strong>Positioning</strong> tab, you can change the <strong>Margin</strong>, <strong>Padding</strong>, <strong>Border</strong> and <strong>Border Radius</strong> of the text block, and <strong>Display</strong> options. You can always switch back to the default style by picking the <strong>Theme Default</strong> option.</p>
+          <img src="./img/typ4.png" height="500px" alt="">
+          <p><b>Step 3</b>: Click <strong>Publish</strong> to save the changes.</p>
+        </div>
+      </section>
+
+      <section >
+        <div id="support" class="section-contents">
+          <h2>Support</h2>
+          <p>If you haven't found the answer to your question here, please email to our support team at <a href="">support@shawthemes.com</a>. We will be happy to help!</p>
+        </div>
+      </section>
+
+
+    </div>
+  </div>
+
+
+  <!---------- FOOTER ---------->
+  <footer>
+    <p>(c) ShawThemes 2020</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
