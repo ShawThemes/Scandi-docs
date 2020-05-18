@@ -58,6 +58,8 @@
               <li class="nav-item nav-item-sec"><a href="#logo">How to change logo</a></li>
               <li class="nav-item nav-item-sec"><a href="#video">How to add video</a></li>
               <li class="nav-item nav-item-sec"><a href="#typo">How to Customize Theme Typography</a></li>
+              <li class="nav-item nav-item-sec"><a href="#sub-form">How to Add Subscribe Form</a></li>
+              <li class="nav-item nav-item-sec"><a href="#message-form">How to Add Question Form</a></li>
             </ul>
           </li>
           
@@ -136,7 +138,6 @@
           <p><b>Step 4</b>: Open WordPress admin panel (navigate through the web-browser to the folder where you have installed the WordPress e.g <b>www.yourdomain.com/wp-admin/</b> ) and go to <strong>Appearance >> Themes</strong>  on admin sidebar. Activate <strong>Scandi</strong>.
           </p>
         </div>
-
         <div id="plugin-inst" class="section-contents">
           <h3>Plugin Installation</h3>
           <p>After activating <strong>Scandi</strong>, you will see this notice:</p>
@@ -330,6 +331,63 @@
           <p>In the <strong>Positioning</strong> tab, you can change the <strong>Margin</strong>, <strong>Padding</strong>, <strong>Border</strong> and <strong>Border Radius</strong> of the text block, and <strong>Display</strong> options. You can always switch back to the default style by picking the <strong>Theme Default</strong> option.</p>
           <img src="./img/typ4.png" height="500px" alt="">
           <p><b>Step 3</b>: Click <strong>Publish</strong> to save the changes.</p>
+        </div>
+
+        <div id="sub-form" class="section-contents">
+          <h3>How to add Subscribe Form</h3>
+          <p><b>Creating and editing forms requires the Contact Form 7 plugin. Please install the plugin if you haven't installed it yet. To find put how,visit the <a href="#plugin-inst">Plugin Installation</a> section on this page.</b> If you have the Contact Form 7 plugin installed, follow the instructions below.</p>
+          <p><b>Step 1</b>: Go to <strong>Contact >> Contact Forms</strong> on your Wordpress admin sidebar and click <strong>Add New</strong>.</p>
+          <img src="./img/form1.png" alt="">
+          <p><b>Step 2</b>: Enter the form title. You may edit it later. Delete all the text from the <strong>Form editor</strong> and paste in the following text:</p>
+          <p><code>&lt;input type="email" name="email-new" class="row-item subscribe-row" id="email" placeholder="Enter your email"&gt;&lt;button type="submit" class="btn btn-subscribe">Subscribe&lt;/button&gt;</code></p>
+          <img src="./img/sub-form1.png" alt="">
+          <p>In the <strong>Mail</strong> tab of the editor, you can change the form settings.
+          <ul>
+            <li>Enter the email address where you want the information to be sent.</li>
+            <li>In <strong>From</strong> field, enter the email that has your site as domain. </li>
+            <li>Enter the <strong>Subject</strong> of the letter, e.g. "New Subscription".</li>
+            <li>In the <strong>Message body</strong> leave only the following text:
+            <p><code>You have a new subscription : [email-new]</code></p></li>
+          </ul>
+          </p>
+          <img src="./img/sub-form2.png" alt="">
+          <p>In the <strong>Messages</strong> tab you can edit the messages shown when the form is used.</p>
+          <p><b>Step 3</b>: Click <strong>Save</strong> to save the changes.</p>
+          <p><b>Step 4</b>: When your form is created, you will see the shortcode for this form in the blue box. You will need it to use the form on the page. Copy this shortcode.</p>
+          <img src="./img/sub-form3.png" alt="">
+          <p><b>Step 5</b>: Navigate to <strong>Appearance >> Customize >> Subscribe form</strong>.</p>
+          <p><b>Step 6</b>: Paste the shortcode into the <strong>Form Shortcode</strong> field. <b>Make sure the <strong>Display section</strong> box is checked.</b></p>
+          <img src="./img/sub-form4.png" alt="">
+          <p><b>Step 7</b>: Click <strong>Publish</strong> to save the changes.</p>
+
+        </div>
+
+        <div id="message-form" class="section-contents">
+          <h3>How to add Question Form</h3>
+          <p><b>Creating and editing forms requires the Contact Form 7 plugin. Please install the plugin if you haven't installed it yet. To find put how,visit the <a href="#plugin-inst">Plugin Installation</a> section on this page.</b> If you have the Contact Form 7 plugin installed, follow the instructions below.</p>
+          <p><b>Step 1</b>: Go to <strong>Contact >> Contact Forms</strong> on your Wordpress admin sidebar and click <strong>Add New</strong>.</p>
+          <img src="./img/form1.png" alt="">
+          <p><b>Step 2</b>: Enter the form title. You may edit it later. Delete all the text from the <strong>Form editor</strong> and paste in the following text:</p>
+          <p><code>&lt;div class="row"&gt;&lt;input type="text" class="row-item" name="user-name" placeholder="Tell us your name"&gt;&lt;input type="email" name="user-email" class="row-item" placeholder="Enter your email"&gt;&lt;/div&gt;&lt;textarea name="user-text" rows="8" placeholder="Enter your message"&gt;&lt;/textarea&gt;&lt;button type="submit" class="btn btn-submit">Submit&lt;/button&gt;</code></p>
+          <img src="./img/q-form1.png" alt="">
+          <p>In the <strong>Mail</strong> tab of the editor, you can change the form settings.
+          <ul>
+            <li>Enter the email address where you want the information to be sent.</li>
+            <li>In <strong>From</strong> field, enter the email that has your site as domain. </li>
+            <li>Enter the <strong>Subject</strong> of the letter, e.g. "New Question".</li>
+            <li>Edit the <strong>Message body</strong> in the way it is shown in the picture:</li>
+          </ul>
+          </p>
+          <img src="./img/q-form2.png" alt="">
+          <p>In the <strong>Messages</strong> tab you can edit the messages shown when the form is used.</p>
+          <p><b>Step 3</b>: Click <strong>Save</strong> to save the changes.</p>
+          <p><b>Step 4</b>: When your form is created, you will see the shortcode for this form in the blue box. You will need it to use the form on the page. Copy this shortcode.</p>
+          <img src="./img/q-form3.png" alt="">
+          <p><b>Step 5</b>: Navigate to <strong>Appearance >> Customize >> FAQ form</strong>.</p>
+          <p><b>Step 6</b>: Paste the shortcode into the <strong>Form Shortcode</strong> field.</p>
+          <img src="./img/q-form4.png" alt="">
+          <p><b>Step 7</b>: Click <strong>Publish</strong> to save the changes. If you don't see the form on the page, go to <strong>Appearance >> Customize >> FAQ</strong> and make sure the <strong>Display Section</strong> box is checked.</p>
+
         </div>
       </section>
 
