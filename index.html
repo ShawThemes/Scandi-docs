@@ -335,20 +335,21 @@
 
         <div id="sub-form" class="section-contents">
           <h3>How to add Subscribe Form</h3>
-          <p><b>Creating and editing forms requires the Contact Form 7 plugin. Please install the plugin if you haven't installed it yet. To find put how,visit the <a href="#plugin-inst">Plugin Installation</a> section on this page.</b> If you have the Contact Form 7 plugin installed, follow the instructions below.</p>
+          <p><b>Creating and editing forms requires the <strong>Contact Form 7 plugin</strong>. Please install the plugin if you haven't installed it yet.</b> To find put how, visit the <a href="#plugin-inst">Plugin Installation</a> section on this page. If you have the Contact Form 7 plugin installed, follow the instructions below.</p>
           <p><b>Step 1</b>: Go to <strong>Contact >> Contact Forms</strong> on your Wordpress admin sidebar and click <strong>Add New</strong>.</p>
           <img src="./img/form1.png" alt="">
           <p><b>Step 2</b>: Enter the form title. You may edit it later. Delete all the text from the <strong>Form editor</strong> and paste in the following text:</p>
-          <p><code>&lt;input type="email" name="email-new" class="row-item subscribe-row" id="email" placeholder="Enter your email"&gt;&lt;button type="submit" class="btn btn-subscribe">Subscribe&lt;/button&gt;</code></p>
+          <p><code>[email* email-subs class:row-item class:subscribe-row placeholder "Enter your email"][submit class:btn class:btn-subscribe "Subscribe"]</code></p>
           <img src="./img/sub-form1.png" alt="">
           <p>In the <strong>Mail</strong> tab of the editor, you can change the form settings.
-          <ul>
-            <li>Enter the email address where you want the information to be sent.</li>
-            <li>In <strong>From</strong> field, enter the email that has your site as domain. </li>
-            <li>Enter the <strong>Subject</strong> of the letter, e.g. "New Subscription".</li>
-            <li>In the <strong>Message body</strong> leave only the following text:
-            <p><code>You have a new subscription : [email-new]</code></p></li>
-          </ul>
+            <ul>
+              <li>Enter the email address where you want the information to be sent.</li>
+              <li>In <strong>From</strong> field, enter the email that has your site as domain. </li>
+              <li>Enter the <strong>Subject</strong> of the letter, e.g. "New Subscription".</li>
+              <li>In the <strong>Message body</strong> leave only the following text:
+              <p><code>You have a new subscription : [email-new]</code></p></li>
+            </ul>
+            Read more on editing the mail settings of your form on <a href="https://contactform7.com/setting-up-mail/" target="_blank">Contact Form 7 Docs page</a>.
           </p>
           <img src="./img/sub-form2.png" alt="">
           <p>In the <strong>Messages</strong> tab you can edit the messages shown when the form is used.</p>
@@ -368,15 +369,21 @@
           <p><b>Step 1</b>: Go to <strong>Contact >> Contact Forms</strong> on your Wordpress admin sidebar and click <strong>Add New</strong>.</p>
           <img src="./img/form1.png" alt="">
           <p><b>Step 2</b>: Enter the form title. You may edit it later. Delete all the text from the <strong>Form editor</strong> and paste in the following text:</p>
-          <p><code>&lt;div class="row"&gt;&lt;input type="text" class="row-item" name="user-name" placeholder="Tell us your name"&gt;&lt;input type="email" name="user-email" class="row-item" placeholder="Enter your email"&gt;&lt;/div&gt;&lt;textarea name="user-text" rows="8" placeholder="Enter your message"&gt;&lt;/textarea&gt;&lt;button type="submit" class="btn btn-submit">Submit&lt;/button&gt;</code></p>
+          <p><code>&lt;div class="row"&gt;
+            [text* user-name class:row-item placeholder "Tell us your name"][email* user-email class:row-item placeholder "Enter your email"]
+            &lt;/div&gt;
+            [textarea* user-message placeholder "Enter your question"]
+            [submit class:btn class:btn-submit "Submit"]
+          </code></p>
           <img src="./img/q-form1.png" alt="">
           <p>In the <strong>Mail</strong> tab of the editor, you can change the form settings.
           <ul>
             <li>Enter the email address where you want the information to be sent.</li>
             <li>In <strong>From</strong> field, enter the email that has your site as domain. </li>
             <li>Enter the <strong>Subject</strong> of the letter, e.g. "New Question".</li>
-            <li>Edit the <strong>Message body</strong> in the way it is shown in the picture:</li>
+            <li>Edit the <strong>Message body</strong> in the way it is shown in the picture below. <b>Make sure NOT to change the text in square brackets!</b> </li>
           </ul>
+          Read more on editing the mail settings of your form on <a href="https://contactform7.com/setting-up-mail/" target="_blank">Contact Form 7 Docs page</a>.
           </p>
           <img src="./img/q-form2.png" alt="">
           <p>In the <strong>Messages</strong> tab you can edit the messages shown when the form is used.</p>
